@@ -1,3 +1,7 @@
+output "stack_hci_extensions_id" {
+  description = "Map of id values across all stack_hci_extensions, keyed the same as var.stack_hci_extensions"
+  value       = { for k, v in azurerm_stack_hci_extension.stack_hci_extensions : k => v.id }
+}
 output "stack_hci_extensions_arc_setting_id" {
   description = "Map of arc_setting_id values across all stack_hci_extensions, keyed the same as var.stack_hci_extensions"
   value       = { for k, v in azurerm_stack_hci_extension.stack_hci_extensions : k => v.arc_setting_id }
