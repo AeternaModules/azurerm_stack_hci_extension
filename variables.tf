@@ -21,8 +21,8 @@ EOT
     name                                     = string
     publisher                                = string
     type                                     = string
-    auto_upgrade_minor_version_enabled       = optional(bool) # Default: true
-    automatic_upgrade_enabled                = optional(bool) # Default: true
+    auto_upgrade_minor_version_enabled       = optional(bool)
+    automatic_upgrade_enabled                = optional(bool)
     protected_settings                       = optional(string)
     protected_settings_key_vault_id          = optional(string)
     protected_settings_key_vault_secret_name = optional(string)
